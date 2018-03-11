@@ -21,7 +21,7 @@ button{
 	background: #24ba9f;
 	padding: 10px 20px;
 	border: 0;
-    color: #fff;
+  color: #fff;
 	text-transform: uppercase;
 }
 
@@ -31,7 +31,7 @@ button{
 }
 .arrow {
 	background: transparent url('../img/arrow.png') 0 0 no-repeat;
-	text-indent: -999999px;
+	font-size: 0px;
 	width: 19px;
 	height: 35px;
 	padding: 0;
@@ -64,7 +64,7 @@ button{
 
 .title {
 	width: 318px;
-    font-size: 21px;
+  font-size: 21px;
 	margin: 0 0 76px 0;
 }
 
@@ -102,14 +102,14 @@ header nav ul li a{
 header .expanded{
 	display: none;
 	position: absolute;
-    background: black;
-    top: 39px;
-    right: 0;
-    left: -29px;
-    margin: auto;
-    padding: 18px 10px 0 16px;
-    font-size: 12px;
-    width: 100px;
+  background: black;
+  top: 39px;
+  right: 0;
+  left: -29px;
+  margin: auto;
+  padding: 18px 10px 0 16px;
+  font-size: 12px;
+  width: 120px;
 }
 
 header .expanded li {
@@ -118,16 +118,16 @@ header .expanded li {
 
 header .expanded::before {
 	width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-bottom-color: #000;
-    content: '';
-    display: block;
-    position: absolute;
-    top: -20px;
-    left: 0;
-    right: 0;
-    margin: auto;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #000;
+  content: '';
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 header nav > ul > li:hover .expanded {
@@ -148,7 +148,7 @@ header nav > ul > li:hover .expanded {
 .slider p {
 	margin: 0 0 30px 0;
 	padding: 0 0 0 58.9px;
-    font-size: 15px;
+  font-size: 15px;
 	line-height: 1.4;
 }
 .slider h2{
@@ -216,9 +216,8 @@ header nav > ul > li:hover .expanded {
 
 .price__list {
 	background: #f1f1f1;
-	padding: 45px 0 0 0;
+	padding: 45px 0 74px 0;
 }
-
 .price__list-single {
 	float: left;
 	width: 32%;
@@ -227,6 +226,20 @@ header nav > ul > li:hover .expanded {
 	position: relative;
 	border: 1px solid #ccc;
 	background: #f9f9f9;
+}
+.price__list-single:hover {
+	    background: #24ba9f;
+			color: #fff;
+}
+.price__list-single:hover button {
+	background: #fff;
+	color: #24ba9f;
+}
+.price__list-single:hover h4 {
+	color: #fff;
+}
+.price__list-inner__circle:hover {
+	color: #24ba9f;
 }
 
 .price__list-single:last-child {
@@ -280,7 +293,6 @@ header nav > ul > li:hover .expanded {
     margin: 10px 0 0 0;
 }
 
-
 .price__list-big__price {
 	font-size: 42px;
 	font-weight: 700;
@@ -305,6 +317,102 @@ header nav > ul > li:hover .expanded {
 .price__list-section__wrapper div:nth-child(even) {
 	background: #f1f1f1;
 }
-
-
+.form__list {
+  background: #fff;
+  padding: 73px 0 64px 0;
+}
+.form__list-left__side {
+  float: left;
+  width: 60%;
+}
+.form__list-right__side {
+  width: 34%;
+  float: right;
+	position: relative;
+}
+.form__list-right__side img {
+	position: absolute;
+  left: 15px;
+  right: 0;
+  top: -50px;
+  bottom: 0;
+}
+.form__list-right__side div {
+  position: absolute;
+  left: 0px;
+  right: 0;
+  top: 200px;
+  bottom: 0;
+}
+.form__list-inner__width input{
+  width: 632px;
+  height: 60px;
+  margin: 0px 0px 24px 0px;
+  padding: 10px 0 0 10px;
+  border: 1px solid #24ba9f;
+}
+.form__list-inner__width input::placeholder{
+  font-size: 30px;
+  color: #c1c1c1;
+}
+.form__list textarea {
+  resize: none;
+  line-height: normal;
+  width: 632px;
+  height: 184px;
+  padding: 10px 0 0 10px;
+  border: 1px solid #24ba9f;
+}
+.form__list-inner__width textarea::placeholder{
+  font-size: 30px;
+  color: #c1c1c1;
+}
+.form__list-right__side input[type="checkbox"] {
+  width: 45px;
+  height: 45px;
+  float: left;
+  margin: -2px 14px 25px -2px;
+}
+.form__list-right__side label {
+  font-size: 19px;
+}
+.form__list-right__side button {
+  width: 340px;
+  height: 70px;
+  margin: 10px 0 0px -4px;
+	font-size: 33px;
+  font-weight: 700;
+	position: absolute;
+  left: 0px;
+  right: 0;
+  top: 270px;
+  bottom: 0;
+}
 /*Footer*/
+
+.footer__container {
+    margin: 0 auto;
+    max-width: 1067px;
+		padding: 20px 0 0 0;
+	}
+.footer__first__box {
+  float: left;
+  width: 65.6%;
+	padding: 16px 0 0 0;
+	letter-spacing: 0.8px;
+
+}
+.footer__second__box {
+  width: 17%;
+  float: left;
+}
+.footer__third__box {
+	width: 14.3%;
+  float: right;
+  font-size: 21px;
+	color: #c1c1c1;
+	padding: 11px 0 0 0;
+}
+.footer__third__box-bold {
+	font-weight: 700;
+}
